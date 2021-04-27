@@ -1,3 +1,5 @@
+package com.aizhan;
+
 public class MultiplicationTable {
     //5*1 = 5
     //5*10 = 50
