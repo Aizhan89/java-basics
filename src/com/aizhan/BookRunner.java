@@ -8,8 +8,18 @@ public class BookRunner {
 
         artOfComputerProgramming.read();
 
+
+
         artOfComputerProgramming.setNumberOfCopies(200);
         effectiveJava.setNumberOfCopies(150);
         cleanCode.setNumberOfCopies(180);
+
+        artOfComputerProgramming.increaseNumberOfCopies(100);
+        effectiveJava.increaseNumberOfCopies(100);
+        cleanCode.increaseNumberOfCopies(100);
+
+        System.out.println(artOfComputerProgramming.getNumberOfCopies());
+        System.out.println(effectiveJava.getNumberOfCopies());
+        System.out.println(cleanCode.getNumberOfCopies());
     }
 }

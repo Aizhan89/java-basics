@@ -4,9 +4,21 @@ public class Book {
 
     private int numberOfCopies;
 
-    void setNumberOfCopies(int setNumberOfCopies){
-
+   public void setNumberOfCopies(int numberOfCopies){
+       if(numberOfCopies > 0 )
         this.numberOfCopies = numberOfCopies;
+    }
+
+    public int getNumberOfCopies() {
+        return numberOfCopies;
+    }
+
+    public void increaseNumberOfCopies(int howMuch){
+        this.numberOfCopies = this.numberOfCopies + howMuch;
+    }
+
+    public void decreaseNumberOfCopies(int howMuch){
+       setNumberOfCopies(this.numberOfCopies - howMuch);
     }
 
     void read(){
